@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Trashcan - Smart Waste Sorting</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -24,15 +23,10 @@
 
     <section id="icon-section">
         <h2>AI Trashcan Status</h2>
-        <img src="ai_trashcan_icon.png" alt="AI Trashcan Icon" id="trashcan-icon" onclick="showWasteDetails()">
-        <div id="waste-details" style="display: none;">
-            <h3>Waste Sorted:</h3>
-            <ul>
-                <li>Recyclable: 12 items</li>
-                <li>Organic: 8 items</li>
-                <li>Non-recyclable: 5 items</li>
-            </ul>
-        </div>
+        <a href="waste-details.html">
+            <img src="ai_trashcan_icon.png" alt="AI Trashcan Icon" id="trashcan-icon">
+        </a>
+        <p>Click the icon to see waste details</p>
     </section>
 
     <section id="how-it-works">

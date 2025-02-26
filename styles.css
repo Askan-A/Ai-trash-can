@@ -17,9 +17,18 @@ nav a {
     color: white;
     text-decoration: none;
 }
-#intro, #how-it-works, #contact {
+#intro, #how-it-works, #contact, #waste-details-page, #icon-section {
     padding: 20px;
     text-align: center;
+}
+#trashcan-icon {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+#trashcan-icon:hover {
+    transform: scale(1.1);
 }
 form {
     display: inline-block;
