@@ -1,59 +1,54 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f4f6f9;
+    color: #2d3436;
+    line-height: 1.6;
 }
+
 header {
-    background-color: #4CAF50;
+    background-color: #34495e;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 20px 0;
 }
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
 nav a {
     margin: 0 15px;
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
-#intro, #how-it-works, #contact, #waste-details-page, #icon-section {
-    padding: 20px;
-    text-align: center;
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
-#trashcan-icon {
-    width: 150px;
+
+.trashcan-icon {
+    width: 30%;
     height: auto;
+    max-width: 150px;
     cursor: pointer;
     transition: transform 0.3s;
 }
-#trashcan-icon:hover {
+
+.trashcan-icon:hover {
     transform: scale(1.1);
 }
-form {
-    display: inline-block;
-    text-align: left;
-    max-width: 400px;
-    width: 100%;
-}
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
-form button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+
+@media (max-width: 600px) {
+    .trashcan-icon {
+        width: 50%;
+    }
 }
